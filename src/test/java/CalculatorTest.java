@@ -28,8 +28,4 @@ public class CalculatorTest {
         assertEquals("공백에러", Calculator.empty(null));
     }
 
-    @Test
-    public void 결과() {
-        assertEquals(10, Calculator.run("2 + 3 * 4 / 2"));
-    }
 }
