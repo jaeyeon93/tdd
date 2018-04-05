@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 public class Lotto {
-//    private static List<Integer> lotto;
     private static List<Integer> lotto;
     private List<String> right;
 
@@ -28,11 +27,6 @@ public class Lotto {
         return lotto.size();
     }
 
-    public static Lotto auto() {
-        Lotto lotto = new Lotto();
-        return lotto;
-    }
-
     public List<String> getRight() {
         return right;
     }
@@ -46,6 +40,7 @@ public class Lotto {
         for(int i = 0; i < right.getRight().size(); i++) {
             if(lotto.contains(Integer.parseInt(right.getRight().get(i))))
                 count++;
+            count += 0;
         }
         return count;
     }
